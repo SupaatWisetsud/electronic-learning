@@ -1,0 +1,149 @@
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content > .detail {
+    flex: 1;
+    display: flex;
+    height: 375px;
+    flex-direction: column;
+    margin-top: 6%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    opacity: 0;
+    animation-name: opacity-top-to-fream;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: inherit; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out
+}
+
+.content > .item-electronic > img {
+    animation-name: opacity-right-to-fream;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: inherit; */
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.detail > .label-title {
+    margin: 10px 0 10px 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+    animation-name: opacity-left-to-fream;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: inherit; */
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out
+}
+
+.detail > .label-detail {
+    opacity: 0;
+    color: white;
+    text-indent: 30px;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+    animation-name: opacity-bottom-to-fream;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    /* animation-iteration-count: inherit; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out
+}
+
+.content > .item-electronic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%;
+    background-color: transparent;
+}
+
+.action {
+    margin-top: 10px;
+    padding: 0 35% 0 0;
+}
+
+.action > button {
+    opacity: 0;
+    background-color: #27AE60;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    animation-name: opacity-to-fream;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    /* animation-iteration-count: inherit; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.action > button:hover {
+    background-color: #1E8449;
+    font-size: 30px;
+}
+
+/* animation */
+@keyframes opacity-left-to-fream {
+    from {
+        transform: translate(-50px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-right-to-fream {
+    from {
+        transform: translate(120%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes opacity-bottom-to-fream {
+    from {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes opacity-top-to-fream {
+    from {
+        transform: translate(0, -10%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes opacity-to-fream {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes object-animation {
+    0% {transform: translate(0, -10%);}
+    50% {transform: translate(0, 0%);}
+    100% {transform: translate(0, 100%);}
+}
