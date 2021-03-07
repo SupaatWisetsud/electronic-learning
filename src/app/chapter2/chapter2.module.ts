@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Chapter2Component } from './chapter2.component'
+import { KatexModule } from 'ng-katex';
 
 import { Chapter2RoutingModule } from './chapter2.routing.module'
 import { PosttestComponent } from './posttest/posttest.component';
@@ -43,7 +44,8 @@ import {
   ],
   imports: [
     CommonModule,
-    Chapter2RoutingModule
+    Chapter2RoutingModule,
+    KatexModule
   ]
 })
 export class Chapter2Module { }
