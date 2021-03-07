@@ -8,11 +8,39 @@ import { PrefaceComponent } from './preface/preface.component';
 import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
-
+import {     
+  BinaryAdditionComponent,
+  BinaryDivisionComponent,
+  BinaryMultiplicationComponent,
+  BinarySubtractionComponent,
+  ComplementOfNumbersComponent,
+  NumberSystemComponent,
+  NumberSystemConversionComponent,
+  RelationOfNumbersComponent,
+  SummaryEndChapterComponent,
+  OctalToHexadecimalConversionComponent 
+} from './material/index'
 
 
 @NgModule({
-  declarations: [Chapter2Component,PosttestComponent, PrefaceComponent, PretestComponent, SidebarComponent, WorkshopComponent],
+  declarations: [
+    Chapter2Component,
+    PosttestComponent, 
+    PrefaceComponent, 
+    PretestComponent, 
+    SidebarComponent, 
+    WorkshopComponent,
+    BinaryAdditionComponent,
+    BinaryDivisionComponent,
+    BinaryMultiplicationComponent,
+    BinarySubtractionComponent,
+    ComplementOfNumbersComponent,
+    NumberSystemComponent,
+    NumberSystemConversionComponent,
+    RelationOfNumbersComponent,
+    SummaryEndChapterComponent,
+    OctalToHexadecimalConversionComponent
+  ],
   imports: [
     CommonModule,
     Chapter2RoutingModule
