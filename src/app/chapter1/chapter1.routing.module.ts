@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core'
 
 import { Chapter1Component1 } from './chapter1.component'
 import { PreFaceComponent } from './preface/preface.component'
+import { PretestComponent } from  './pretest/pretest.component'
 
 const router: Routes = [
     {
@@ -12,6 +13,10 @@ const router: Routes = [
             {
                 path: '',
                 component: PreFaceComponent
+            },
+            {
+                path: 'pretest',
+                component: PretestComponent
             }
         ]
     }
