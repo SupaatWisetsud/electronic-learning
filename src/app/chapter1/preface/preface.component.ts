@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core'
 @Component({
     selector: "app-preface",
     templateUrl: './preface.component.html',
-    styleUrls: ['./preface.component.scss']
+    styleUrls: ['./preface.component.scss', '../chapter1.component.scss']
 })
 export class PreFaceComponent implements OnInit {
     
