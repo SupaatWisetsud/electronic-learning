@@ -22,6 +22,7 @@ h3, h1, p {
     display: flex;
     align-items: center;
     color: white;
+    z-index: 999;
 }
 .logo {
     cursor: pointer;

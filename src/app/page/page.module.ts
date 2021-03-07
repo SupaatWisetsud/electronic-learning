@@ -6,6 +6,7 @@ import { PageRoutingModule } from './page.routing.module';
 import { PageComponent } from './page.component'
 import { InitPageComponent } from './init/init.component';
 import { LearningComponent } from './learning/learning.component';
+import { AboutComponent } from './about/about.component';
 
 import { HeaderComponent } from '../layouts/header/header.component'
 
@@ -14,7 +15,8 @@ import { HeaderComponent } from '../layouts/header/header.component'
         PageComponent,
         InitPageComponent,
         LearningComponent,
-        HeaderComponent
+        AboutComponent,
+        HeaderComponent,
     ],
     imports: [
         CommonModule,

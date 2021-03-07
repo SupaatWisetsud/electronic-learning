@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 
 import { PageModule } from './page/page.module'
+import { CourseModule } from './course/course.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
   ],
   imports: [
     BrowserModule,
+    CourseModule,
     PageModule,
     AppRoutingModule,
   ],

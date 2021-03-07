@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InitPageComponent } from './init/init.component';
 import { LearningComponent } from './learning/learning.component';
-import { PageComponent } from './page.component'
+import { AboutComponent } from './about/about.component';
+import { PageComponent } from './page.component';
+
 const routes: Routes = [
     {
         path: 'page',
@@ -15,6 +17,10 @@ const routes: Routes = [
             {
                 path: 'learning',
                 component: LearningComponent
+            },
+            {
+                path: 'about',
+                component: AboutComponent
             }
         ]
     }

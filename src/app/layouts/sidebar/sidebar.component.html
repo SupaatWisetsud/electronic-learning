@@ -1,1 +1,20 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+    <div class="logo">
+        <div class="back-logo">
+            <img src="../../../assets/image/arrow-back-icon.png" width="35%" routerLink="/page/learning">
+        </div>
+        <div class="logo-title">
+            <img src="../../../assets/image/logo.png" width="18%">
+            <h3>Logo</h3>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li [routerLink]="'preface'">คำนำ</li>
+            <li [routerLink]="id+'/pretest'">แบบทดสอบก่อนเรียน</li>
+            <li>{{title}}</li>
+            <li [routerLink]="id+'/posttest'">แบบทดสอบหลังเรียน</li>
+            <li>ปฎิบัติการ</li>
+        </ul>
+    </div>
+</div>

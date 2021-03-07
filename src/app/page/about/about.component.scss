@@ -1,0 +1,27 @@
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 50px 5px 5px 5px;
+    position: relative;
+
+    & > .about-detail {
+        padding: 50px;
+        & > .content {
+            height: 300px;
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0,0,0,.3);
+        }
+    }
+
+    & > .about-image {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
