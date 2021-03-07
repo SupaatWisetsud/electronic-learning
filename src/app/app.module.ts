@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PageModule } from './page/page.module'
-import { CourseModule } from './course/course.module'
+import { Chapter1Module } from './chapter1/chapter1.module'
 
 @NgModule({
   declarations: [
@@ -13,8 +14,8 @@ import { CourseModule } from './course/course.module'
   ],
   imports: [
     BrowserModule,
-    CourseModule,
     PageModule,
+    Chapter1Module,
     AppRoutingModule,
   ],
   providers: [],

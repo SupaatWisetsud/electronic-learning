@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { CourseRoutingModule } from './course.routing.module'
+import { Chapter1Component1 } from './chapter1.component'
 
-import { CourseComponent } from './course.component'
+import { Chapter1RoutingModule } from './chapter1.routing.module'
 import { PreFaceComponent } from './preface/preface.component'
+import { SidebarComponent } from './sidebar/sidebar.component'
 
-import { SidebarComponent } from '../layouts/sidebar/sidebar.component'
 @NgModule({
     declarations: [
-        CourseComponent,
+        Chapter1Component1,
         PreFaceComponent,
         SidebarComponent
     ],
     imports: [
         CommonModule,
-        CourseRoutingModule
+        Chapter1RoutingModule
     ]
 })
-export class CourseModule {}
+export class Chapter1Module {}

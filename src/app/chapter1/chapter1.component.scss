@@ -1,4 +1,4 @@
-.container-course {
+.container {
     position: relative;
     height: 100vh;
     background: url('../../assets/image/background/bg_course.jpg');
@@ -7,8 +7,3 @@
     background-position: center;
 }
 
-.content {
-    z-index: 99;
-    margin-left: 300px;
-    padding: 10px;
-}
