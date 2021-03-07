@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { ActivatedRoute } from '@angular/router'
+import { Router } from '@angular/router'
 // import chapter from '../../../model/chapter';
 @Component({
   selector: 'app-sidebar',
@@ -8,15 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  public url: string;
   // public id: number;
   // public title: string;
   // public description: Array<any>;
 
   constructor(
+    private router: Router
     // private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
+    this.url = this.router.url
+    
     // let params = this.route.snapshot.paramMap;
     // if(params.has('id')){
     //   this.id = parseInt(params.get('id'));
