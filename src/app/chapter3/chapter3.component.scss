@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    // height: 100vh;
+    background: url('../../assets/image/background/bg_course.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content {
+    margin-left: 300px;
+    padding: 20px;
+    height: 100vh;
+}
