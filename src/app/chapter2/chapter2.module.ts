@@ -9,6 +9,7 @@ import { PrefaceComponent } from './preface/preface.component';
 import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import {     
   BinaryAdditionComponent,
   BinaryDivisionComponent,
@@ -45,7 +46,9 @@ import {
   imports: [
     CommonModule,
     Chapter2RoutingModule,
-    KatexModule
+    KatexModule,
+    ReactiveFormsModule, 
+    FormsModule
   ]
 })
 export class Chapter2Module { }
