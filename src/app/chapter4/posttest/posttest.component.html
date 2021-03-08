@@ -1,1 +1,499 @@
-<p>posttest works!</p>
+<div class="content" style="height: 100vh;">
+    <div class="paper">
+        <div class="box-head-title">
+            <h2>แบบทดสอบก่อนเรียน</h2>
+        </div>
+        <form [formGroup]="myForm" class="form_question">
+
+            <div class="examination">
+                <div class="question">
+                  <p>1. กฎของนอต (NOT) ถ้า Α = 0 แล้ว <ng-katex [equation]="'\\overline{Α} '"></ng-katex>เท่ากับเท่าใด</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q1">
+                        <span>1</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q1">
+                        <label>0</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q1">
+                        <label>A</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q1">
+                        <label>B</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>2. กฎของการกระจ่าย (Distributive Law) Α ( B + C ) เท่ากับเท่าใด</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q2">
+                        <span>( ΑB ) + ( AC )</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q2">
+                        <label>(A+B)(A+C)</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q2">
+                        <label>(A+B+C)</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q2">
+                        <label>ABC</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>3. คำสั่งตรรกะสำหรับ Y2</p>
+                    <img src="../../assets/image/data4/3.png">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q3">
+                        <span>A⋅B</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q3">
+                        <label>A+B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q3">
+                        <label>A⋅B⋅C⋅D</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q3">
+                        <label>C⋅D</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>4. คำสั่งตรรกะสำหรับ Y</p>
+                    <img src="../../assets/image/data4/3.png">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q4">
+                        <span>A⋅B</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q4">
+                        <label>A+B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q4">
+                        <label>A⋅B⋅C⋅D</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q4">
+                        <label>C⋅D</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>5. คำสั่งตรรกะสำหรับ Q</p>
+                    <img src="../../assets/image/data4/6.jpg">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q5">
+                        <span>A AND B</span>  
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q5">
+                        <label>A OR B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q5">
+                        <label>B OR C</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q5">
+                        <label>B AND C</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>6. เอาต์พุต Y ของวงจรลอจิกนี้คืออะไรถ้า A = 1, B = 1 และ C = 1</p>
+                    <img src="../../assets/image/data4/1.png">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q6">
+                        <span>0</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q6">
+                        <label>1</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q6">
+                        <label>2</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q6">
+                        <label>3</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>7. เอาต์พุต Z ของวงจรลอจิกนี้คืออะไรถ้า A = 1 และ B = 1</p>
+                    <img src="../../assets/image/data4/2.png">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q7">
+                        <span>0</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q7">
+                        <label>1</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q7">
+                        <label>2</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q7">
+                        <label>3</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>8. คำสั่งตรรกะสำหรับ Y1</p>
+                    <img src="../../assets/image/data4/3.jpg">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q8">
+                        <span>A⋅B</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q8">
+                        <label>A+B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q8">
+                        <label>A⋅B⋅C⋅D</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q8">
+                        <label>C⋅D</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>9. คำสั่งตรรกะสำหรับ Y</p>
+                    <img src="../../assets/image/data4/9.jpg">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q9">
+                        <ng-katex [equation]="'\\overline{(A⋅B)+\\overline{C}}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q9">
+                        <ng-katex [equation]="'\\overline{(A⋅B)}+\\overline{C}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q9">
+                        <ng-katex [equation]="'\\overline{(A⋅B)}+\\overline{\\overline{C}}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q9">
+                        <ng-katex [equation]="'(A\\overline{⋅B)+\\overline{C}}'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>10. ค่าของ Y คืออะไรถ้า A = 1, B = 1, C = 0</p>
+                    <img src="../../assets/image/data4/9.jpg">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q10">
+                        <span>0</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q10">
+                        <label>1</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q10">
+                        <label>2</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q10">
+                        <label>3</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>11. Product of Sum Expression : POS คืออะไร</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q11">
+                        <span>ผลบวกของผลคูณ</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q11">
+                        <label>ผลคูณของผลบวก</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q11">
+                        <label>ผลบวกของผลลบ</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q11">
+                        <label>ผลคูณของผลหาร</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>12. ในทฤษฎีของ ดี มอร์แกน (De’morgan Theorem)กับสมการ<ng-katex [equation]="'Y=\\overline{AB} '"></ng-katex> เปลี่ยนสมการให้อยู่ในรูปของ OR </p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q12">
+                        <ng-katex [equation]="'\\overline{\\overline{AB}}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q12">
+                        <ng-katex [equation]="'\\overline{AB} '"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q12">
+                        <ng-katex [equation]="'\\overline{A+B}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q12">
+                        <ng-katex [equation]="'A+B'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>13. ในทฤษฎีของ ดี มอร์แกน (De’morgan Theorem)กับสมการ<ng-katex [equation]="'Y=\\overline{A+B} '"></ng-katex> เปลี่ยนสมการให้อยู่ในรูปของ AND </p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q13">
+                        <ng-katex [equation]="'AB'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q13">
+                        <ng-katex [equation]="'\\overline{AB}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q13">
+                        <ng-katex [equation]="'\\overline{A+B}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q13">
+                        <ng-katex [equation]="'A+B'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>14. จงลดรูปลอจิก (<ng-katex [equation]="'f(A ,B) = (\\overline{A}+B)(A+B) '"></ng-katex>โดยให้ได้ค่าตัวแปรที่น้อยที่สุดคือข้อใด</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q14">
+                        <span>A</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q14">
+                        <label>B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q14">
+                        <label>C</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q14">
+                        <label>D</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>15. จงลดรูปลอจิก (<ng-katex [equation]="'f(A ,B) = (A+B)(A+\\overline{B})'"></ng-katex>โดยให้ได้ค่าตัวแปรที่น้อยที่สุดคือข้อใด</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q15">
+                        <span>A</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q15">
+                        <label>B</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q15">
+                        <label>C</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q15">
+                        <label>D</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>16. จงลดรูปลอจิก <ng-katex [equation]="'f(A ,B) = (A+B)(\\overline{A}+B)(\\overline{A}+\\overline{B})'"></ng-katex>โดยให้ได้ค่าตัวแปรที่น้อยที่สุดคือข้อใด</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q16">
+                        <ng-katex [equation]="'\\overline{A} \\overline{B}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q16">
+                        <ng-katex [equation]="'A  \\overline{B}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q16">
+                        <ng-katex [equation]="'\\overline{A} B'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q16">
+                        <ng-katex [equation]="'AB'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>17. ค่า D เป็น TRUE ถ้า ...</p>
+                    <img src="../../assets/image/data4/10.jpg">
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q17">
+                        <span>A = 0, B = 0</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q17">
+                        <label>A = 0, B = 1</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q17">
+                        <label>A = 1, B = 2</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q17">
+                        <label>A = 1, B = 1</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>18. Sum of Products Expression : SOP คืออะไร</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q18">
+                        <span>ผลบวกของผลคูณ</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q18">
+                        <label>ผลคูณของผลบวก</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q18">
+                        <label>ผลบวกของผลลบ</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q18">
+                        <label>ผลคูณของผลหาร</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>19. สมการใดต่อไปนี้เป็นสมการ SOP แบบ Canonical sum <ng-katex [equation]="'f(A,B,C,D)=AB+ABC+AB\\overline{C}\\overline{D}'"></ng-katex></p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q19">
+                        <ng-katex [equation]="'=AB+ABC+ABCD+\\overline{C}\\overline{D}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q19">
+                        <ng-katex [equation]="'=ABCD+ABC+ABCD+\\overline{C}\\overline{D}'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q19">
+                        <ng-katex [equation]="'=ABCD+ABCD+ABCD+ABCD'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q19">
+                        <ng-katex [equation]="'=ABCD+ABC\\overline{D}+AB\\overline{C}D+AB\\overline{C}\\overline{D}'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examination">
+                <div class="question">
+                    <p>20. สมการใดต่อไปนี้เป็นสมการ POS แบบ Canonical product <ng-katex [equation]="'f(A,B,C)=(A+B)(A+\\overline{B}+C)'"></ng-katex></p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c4_q20">
+                        <ng-katex [equation]="'(A+B+C)(A+\\overline{B}+C)'"></ng-katex> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c4_q20">
+                        <ng-katex [equation]="'(A+B+C)(A+\\overline{B}+)(A+B+C)(A+\\overline{B}+C)'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c4_q20">
+                        <ng-katex [equation]="'(A+B+C\\overline{C})(A+\\overline{B}+C)'"></ng-katex>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c4_q20">
+                        <ng-katex [equation]="'(A+B+C)(A+B+\\overline{C})(A+\\overline{B})+C'"></ng-katex>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
