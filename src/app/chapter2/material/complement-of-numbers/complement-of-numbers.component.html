@@ -1,29 +1,37 @@
 <div class="content">
-    <h2>คอมพลีเมนต์ของจำนวน (Complement of Numbers)</h2>
-    <div>
-        <pre>
-            Arijit, Saha and Nilotpal, Manna (2007 : 43) ได้กล่าวว่า คอมพลีเมนต์ใช้ใน
-        กระบวนการลบ และจัดการเชิงตรรกะ (Logical Manipulations) ของดิจิทัลคอมพิวเตอร์ ระบบเลข
-        ฐานจะมีอยู่ 2 คอมพลีเมนต์ เช่น เลขฐานสองจะมี2’s Complement และ 1’s Complement
-        หรือ ระบบเลขฐานสิบจะมี 10’s Complement และ 9’s Complement ในบทนี้ขอกล่าวเฉพาะ
-        ระบบเลขฐานสองเท่านั้น
-        </pre>
-        <pre>
-            1. คอมพลีเมนต์ที่หนึ่ง (The r’s Complement)
-            ถ้าจำนวนเต็มบวก N บนฐาน r แล้ว ซึ่งประกอบด้วยตัวเลขจำนวน n ตัว แล้วคอมพลีเมนต์
-        ที่หนึ่ง ของ N จะมีค่า <ng-katex [equation]="'r^n-N'"></ng-katex> สำหรับ N ที่ไม่เป็น 0 ดังตัวอย่าง 2.16
-        </pre>
-        <img src="assets/image/c2/ex2__16.PNG">
-        <pre>
-            2. คอมพลีเมนต์ที่สอง (The (r-1)’s Complement)
-            ถ้าจำนวนเต็มบวก N บนฐาน r แล้ว ซึ่งประกอบด้วยตัวเลขจำนวน n ตัว และทศนิยม
-        จำนวน m ตัว แล้วคอมพลีเมนต์ที่สองของ N จะมีค่า <ng-katex [equation]="'r^n-r^{-m}-N'"></ng-katex> สำหรับ N ที่ไม่เป็น 0 ดังตัวอย่าง 
-        </pre>
-        <img src="assets/image/c2/ex2__17.PNG">
-        <pre>
-            หรืออาจบอกได้ว่า 2’s Complement ของเลขใด ๆ ก็คือ 1’s Complement ของเลขนั้น
-        บวกด้วย 1 นั่นเอง
-        </pre>
-        <img src="assets/image/c2/ex2__18.PNG">
+    <div class="paper">
+        <h2 class="box-head-title">คอมพลีเมนต์ของจำนวน (Complement of Numbers)</h2>
+        <div>
+            <p class="abs">
+                Arijit, Saha and Nilotpal, Manna (2007 : 43) ได้กล่าวว่า คอมพลีเมนต์ใช้ใน
+            กระบวนการลบ และจัดการเชิงตรรกะ (Logical Manipulations) ของดิจิทัลคอมพิวเตอร์ ระบบเลข
+            ฐานจะมีอยู่ 2 คอมพลีเมนต์ เช่น เลขฐานสองจะมี2’s Complement และ 1’s Complement
+            หรือ ระบบเลขฐานสิบจะมี 10’s Complement และ 9’s Complement ในบทนี้ขอกล่าวเฉพาะ
+            ระบบเลขฐานสองเท่านั้น
+            </p>
+            <p class="abs">
+                1. คอมพลีเมนต์ที่หนึ่ง (The r’s Complement)
+                ถ้าจำนวนเต็มบวก N บนฐาน r แล้ว ซึ่งประกอบด้วยตัวเลขจำนวน n ตัว แล้วคอมพลีเมนต์
+            ที่หนึ่ง ของ N จะมีค่า <ng-katex [equation]="'r^n-N'"></ng-katex> สำหรับ N ที่ไม่เป็น 0 ดังตัวอย่าง 2.16
+            </p>
+            <div class="box-img">
+                <img src="assets/image/c2/ex2__16.PNG">
+            </div>
+            <p class="abs">
+                2. คอมพลีเมนต์ที่สอง (The (r-1)’s Complement)
+                ถ้าจำนวนเต็มบวก N บนฐาน r แล้ว ซึ่งประกอบด้วยตัวเลขจำนวน n ตัว และทศนิยม
+            จำนวน m ตัว แล้วคอมพลีเมนต์ที่สองของ N จะมีค่า <ng-katex [equation]="'r^n-r^{-m}-N'"></ng-katex> สำหรับ N ที่ไม่เป็น 0 ดังตัวอย่าง 
+            </p>
+            <div class="box-img">
+                <img src="assets/image/c2/ex2__17.PNG">
+            </div>
+            <p class="abs">
+                หรืออาจบอกได้ว่า 2’s Complement ของเลขใด ๆ ก็คือ 1’s Complement ของเลขนั้น
+            บวกด้วย 1 นั่นเอง
+            </p>
+            <div class="box-img">
+                <img src="assets/image/c2/ex2__18.PNG">
+            </div>
+        </div>
     </div>
 </div>
