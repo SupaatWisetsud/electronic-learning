@@ -1,27 +1,29 @@
 <div class="content">
-    <p>pretest</p>
-    <form>
-        
-        <div class="examination">
-            <div class="question">
-
-            </div>
-            <div class="answer">
-                <div class="choose">
-                    <input type="radio">
-                    <label>1</label>
-                </div>
-                <div class="choose">
-
-                </div>
-                <div class="choose">
-
-                </div>
-                <div class="choose">
-
-                </div>
-            </div>
+    <div class="paper">
+        <div class="box-head-title">
+            <h2>แบบทดสอบก่อนเรียน</h2>
         </div>
-
-    </form>
+        <form [formGroup]="myForm">
+            <div class="examination">
+                <div class="question">
+                    <p>1. ค่าเส้นมาตราฐาน</p>
+                </div>
+                <div class="answer">
+                    <div class="choose">
+                        <input type="radio" value="1" formControlName="c1_q1">
+                        <span>1</span> 
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="2" formControlName="c1_q1">
+                        <label>2</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="3" formControlName="c1_q1">
+                        <label>3</label>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
+    </div>
 </div>

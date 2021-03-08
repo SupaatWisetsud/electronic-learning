@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component'
 import { PretestComponent } from './pretest/pretest.component'
 import { PosttestComponent } from './posttest/posttest.component'
 import { WorkshopComponent } from './workshop/workshop.component'
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import {
     AnalogAndDigitalComponent,
     DigitalApplicationComponent,
@@ -37,7 +39,9 @@ import {
     ],
     imports: [
         CommonModule,
-        Chapter1RoutingModule
+        Chapter1RoutingModule,
+        ReactiveFormsModule,
+        FormsModule
     ]
 })
 export class Chapter1Module {}
