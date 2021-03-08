@@ -3,25 +3,68 @@ p {
 }
 
 .container {
+    width: 100%;
+    overflow: hidden;
     display: flex;
     height: 100vh;
     padding: 50px 5px 5px 5px;
     position: relative;
 
     & > .about-detail {
-        padding: 50px;
+        padding: 100px;
         & > .content {
-            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 4vh;
+            height: 50vh;
             border-radius: 10px;
             color: white;
             padding: 20px;
-            background-color: rgba(0,0,0,.3);
+            background-color: rgba(0,0,0,.5);
+
+            animation: content;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out
         }
     }
 
     & > .about-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        animation: image-about;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out
+        // animation-duration: .3s;
+    }
+}
+
+@keyframes image-about {
+    from {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+    to {
+        
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes content {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
