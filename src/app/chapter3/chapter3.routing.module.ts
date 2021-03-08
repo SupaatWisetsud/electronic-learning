@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core'
 
 import { Chapter3Component } from './chapter3.component'
 import { PrefaceComponent } from './preface/preface.component'
+<<<<<<< HEAD
 import { PretestComponent } from  './pretest/pretest.component'
+=======
+>>>>>>> 8b1ddaa8372fe05d0a3701cfd142cbc68e377d2b
 
 const router: Routes = [
     {
@@ -13,10 +16,13 @@ const router: Routes = [
             {
                 path: '',
                 component: PrefaceComponent
+<<<<<<< HEAD
             },
             {
                 path: 'pretest',
                 component: PretestComponent
+=======
+>>>>>>> 8b1ddaa8372fe05d0a3701cfd142cbc68e377d2b
             }
         ]
     }
