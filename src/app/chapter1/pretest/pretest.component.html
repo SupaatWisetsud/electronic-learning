@@ -1,29 +1,34 @@
-<div class="content">
+<div class="content" style="height: 100vh;">
     <div class="paper">
         <div class="box-head-title">
             <h2>แบบทดสอบก่อนเรียน</h2>
         </div>
-        <form [formGroup]="myForm">
+        <form [formGroup]="myForm" class="form_question">
+
             <div class="examination">
                 <div class="question">
-                    <p>1. ค่าเส้นมาตราฐาน</p>
+                    <p>1. สัญญาณดิจิตอลมีข้อดีคืออะไร</p>
                 </div>
                 <div class="answer">
                     <div class="choose">
                         <input type="radio" value="1" formControlName="c1_q1">
-                        <span>1</span> 
+                        <span>ทนต่อสัญญาณรบกวน</span> 
                     </div>
                     <div class="choose">
                         <input type="radio" value="2" formControlName="c1_q1">
-                        <label>2</label>
+                        <label>มีความยืดหยุ่นสูง</label>
                     </div>
                     <div class="choose">
                         <input type="radio" value="3" formControlName="c1_q1">
-                        <label>3</label>
+                        <label>การทำงานที่แม่นยำ</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" value="4" formControlName="c1_q1">
+                        <label>ถูกทุกข้อ</label>
                     </div>
                 </div>
             </div>
-    
+            
         </form>
     </div>
 </div>

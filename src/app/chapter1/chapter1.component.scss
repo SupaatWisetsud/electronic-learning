@@ -1,21 +1,16 @@
 .container {
     position: relative;
-    // height: 100vh;
-    background: url('../../assets/image/background/bg_course.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #F2F3F4;
 }
 
 .content {
     margin-left: 300px;
     padding: 20px;
-    height: 100vh;
+    height: auto;
 }
 
 .paper {
-    background-color: rgb(221, 221, 221);
+    background-color: white;
     padding: 40px 80px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.3);
@@ -24,7 +19,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.box-head-title2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
     padding: 10px 0;
     background-color: skyblue;
     border-radius: 5px;
@@ -32,6 +38,7 @@
 .box-label-title {
     border-left: 5px solid green;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .answer {
@@ -39,5 +46,43 @@
 
     & > .choose {
         margin: 10px 0;
+    }
+}
+.abs {
+    text-indent: 50px;
+    text-align: justify;
+    margin: 10px 0;
+}
+.box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.box-label-img {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+.form_question {
+    padding: 10px;
+}
+.question {
+    margin: 10px 0;
+    font-size: 19px;
+    font-weight: bold;
+}
+.answer {
+    padding: 0px 15px;
+
+    & > .choose {
+        display: flex;
+        align-items: center;
+        & > input {
+            margin-right: 10px;
+        }
     }
 }
