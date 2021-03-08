@@ -1,0 +1,50 @@
+<div class="content">
+    <h2>การเขียนสมการตรรกะจากตารางความจริง (Converting Truth Tables into Boolean Expressions)</h2>
+    <div>
+        <pre>
+            Stephen, D. Brown. (2005 : 40) ได้กล่าวว่า เราสามารถการเขียนสมการตรรกะจาก
+        ตารางความจริง ในรูปของ minter ได้โดยพิจารณาค่าของอินพุตที่เป็น “1” แทนด้วย x สำหรับค่า
+        อินพุตที่เป็น “0” แทนด้วย <ng-katex [equation]="'\\overline{x}'"></ng-katex> ในทำนองเดียวกันค่าของอินพุตที่เป็น “0” แทนด้วย x สำหรับค่า
+        อินพุตที่เป็น “1” แทนด้วย <ng-katex [equation]="'\\overline{x}'"></ng-katex> สำหรับ Maxterm ดังตาราง 4.2
+        </pre>
+        <pre>
+            ตาราง 4.4 สมการตรรกะจากตารางความจริง
+        </pre>
+        <img src="assets/image/c4/ex4_6.PNG">
+        <pre>
+            ที่มา : Stephen, D. Brown. (2005 : 40)
+        </pre>
+        <pre>
+            การแทนสมการตรรกะของ minterm ใช้สัญลักษณ์ m (ตัวพิมพ์เล็ก) และสมการในรูปแบบ
+        Maxterm จะใช้สัญลักษณ์ M (ตัวพิมพ์ใหญ่)
+
+            ตัวอย่าง 4.6 จงเขียนสมการตรรกะรูปของ Minterm และ Maxterm จากตารางความ
+                       จริงต่อไปนี้
+        </pre>
+        <img src="assets/image/c4/ex4_7.PNG">
+        <pre>
+            Enoch, O. Hwang. (2005 : 40-41) ได้กล่าวว่า สามารถเขียนรูปสมการตรกรระของ
+        Minterm และ Maxterm ด้วยรูปแบบมาตรฐานของพีชคณิตโดยสัญกรณ์แบบสั้น (Shorthand
+        Notation) สำหรับ Minterm แทนด้วยสัญลักษณ์ <ng-katex [equation]="'\\sum'"></ng-katex> และสำหรับ Maxterm แทนด้วยสัญลักษณ <ng-katex [equation]="'\\Pi'"></ng-katex> 
+        </pre>
+        <pre>
+            รูปสมการของ Minterm สามารถเขียนในรูปของฟังก์ชันได้นี้
+
+                                <ng-katex [equation]="'f(x_1,x_2,x_3)=\\sum(m_3,m_4,m_6)'"></ng-katex>
+
+                                            หรือ
+
+                                <ng-katex [equation]="'f(x_1,x_2,x_3)=\\sum M(3,4,6)'"></ng-katex>
+                               
+            และรูปสมการของ Maxterm สามารถเขียนในรูปของฟังก์ชันได้ดังนี้
+
+                            <ng-katex [equation]="'f(x_1,x_2,x_3)=\\Pi(m_0,m_1,2m_6,m_7)'"></ng-katex>
+                                        
+                                        หรือ
+
+                            <ng-katex [equation]="'f(x_1,x_2,x_3)=\\sum M(0,1,2,5,7)'"></ng-katex>
+        </pre>
+        <img src="assets/image/c4/ex4_8.PNG">
+    </div>
+</div>
+
