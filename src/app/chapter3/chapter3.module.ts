@@ -10,6 +10,7 @@ import { PrefaceComponent } from './preface/preface.component';
 import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import {     
   GateWithMoreThanInputsComponent,
   LogicIntegratedCircuitsComponent,
@@ -45,7 +46,9 @@ import {
   imports: [
     CommonModule,
     Chapter3RoutingModule,
-    KatexModule
+    KatexModule,
+    ReactiveFormsModule, 
+    FormsModule
   ]
 })
 export class Chapter3Module { }

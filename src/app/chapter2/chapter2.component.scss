@@ -1,19 +1,13 @@
-.container {
+.container-c {
     position: relative;
-    // height: 100vh;
-    background: url('../../assets/image/background/bg_course.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #F2F3F4;
 }
 
 .content {
     margin-left: 300px;
     padding: 20px;
-    height: 100vh;
+    height: auto;
 }
-
 
 .paper {
     background-color: white;

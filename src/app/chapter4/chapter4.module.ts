@@ -10,6 +10,8 @@ import { PrefaceComponent } from './preface/preface.component';
 import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+
 import {
   BooleanAlgebraLawComponent,
   ConvertingTruthTablesIntoBooleanExpressionsComponent,
@@ -40,7 +42,9 @@ import {
   imports: [
     CommonModule,
     Chapter4RoutingModule,
-    KatexModule
+    KatexModule,
+    ReactiveFormsModule, 
+    FormsModule
   ]
 })
 export class Chapter4Module { }
