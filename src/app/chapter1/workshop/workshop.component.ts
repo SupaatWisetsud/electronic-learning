@@ -12,4 +12,23 @@ export class WorkshopComponent implements OnInit {
     ngOnInit(): void {
         
     }
+    public rotationX = 0.0;
+    public rotationY = 0.0;
+    public rotationZ = 0.0;
+  
+    public translationY = 0.0;
+  
+    public cameraPositionX = 20.0;
+  
+    public mouseEnter() {
+      console.log('mouseEnter');
+    }
+  
+    public click() {
+      console.log('click');
+    }
+  
+    public mouseExit() {
+      console.log('mouseExit');
+    }
 }
