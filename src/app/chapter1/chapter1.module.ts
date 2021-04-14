@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { Chapter1Component1 } from './chapter1.component'
-
+import { AtftModule } from 'atft';
 import { Chapter1RoutingModule } from './chapter1.routing.module'
 import { PreFaceComponent } from './preface/preface.component'
 import { SidebarComponent } from './sidebar/sidebar.component'
 import { PretestComponent } from './pretest/pretest.component'
 import { PosttestComponent } from './posttest/posttest.component'
 import { WorkshopComponent } from './workshop/workshop.component'
-
+import {MatCardModule} from '@angular/material/card';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import {
     AnalogAndDigitalComponent,
@@ -41,7 +41,9 @@ import {
         CommonModule,
         Chapter1RoutingModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        AtftModule,
+        MatCardModule
     ]
 })
 export class Chapter1Module {}
