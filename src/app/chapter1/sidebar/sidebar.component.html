@@ -11,10 +11,13 @@
     <div class="menu">
         <ul>
             <li routerLink="/chapter1">คำนำ</li>
-            <li routerLink="/chapter1/pretest" >แบบทดสอบก่อนเรียน</li>
+            <li *ngIf="!score_pretest1" routerLink="/chapter1/pretest" >แบบทดสอบก่อนเรียน</li>
+            <ul *ngIf="score_pretest1" class="lesson-menu disabled-c">
+                <li style=" display: block; cursor: pointer;">แบบทดสอบก่อนเรียน</li>
+            </ul>
             <div class="lesson">
-                <p class="lesson-title">บทที่ 1 ความรู้พื้นฐานด้านระบบดิจิทัล {{score_pretest1}}</p>
-                <ul class="lesson-menu" *ngIf="score_pretest1 else elseScore">
+                <p class="lesson-title">บทที่ 1 ความรู้พื้นฐานด้านระบบดิจิทัล </p>
+                <ul class="lesson-menu" *ngIf="score_pretest1">
                     <li routerLink="/chapter1/analog-and-digital">ข้อมูลแอนะล็อกและดิจิทัล</li>
                     <li routerLink="/chapter1/the-advantages-of-digital">ข้อดีของระบบดิจิทัล</li>
                     <li routerLink="/chapter1/digital-limitations">ข้อจำกัดของระบบดิจิทัล</li>
@@ -24,8 +27,8 @@
                     <li routerLink="/chapter1/digital-application">การประยุกต์ใช้งานระบบดิจิทัล</li>
                     <li routerLink="/chapter1/summary-end-chapter">สรุปท้ายบท</li>
                 </ul>
-                <ng-template #elseScore>
-                    <ul class="lesson-menu disabled-c">
+                
+                    <ul *ngIf="!score_pretest1" class="lesson-menu disabled-c">
                         <li>ข้อมูลแอนะล็อกและดิจิทัล</li>
                         <li>ข้อดีของระบบดิจิทัล</li>
                         <li>ข้อจำกัดของระบบดิจิทัล</li>
@@ -35,7 +38,7 @@
                         <li>การประยุกต์ใช้งานระบบดิจิทัล</li>
                         <li>สรุปท้ายบท</li>
                     </ul>
-                </ng-template>
+              
             </div>
             <li *ngIf="score_pretest1" routerLink="/chapter1/posttest">แบบทดสอบหลังเรียน</li>
             <li routerLink="/chapter1/workshop">ปฎิบัติการ</li>

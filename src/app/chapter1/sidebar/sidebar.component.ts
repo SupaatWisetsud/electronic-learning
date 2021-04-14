@@ -9,7 +9,7 @@ import { CheckAswerComponent } from '../../services/check-aswer.service'
 })
 export class SidebarComponent implements OnInit {
 
-  public score_pretest1 = true;
+  public score_pretest1:boolean
   public url: string;
   // public id: number;
   // public title: string;
@@ -23,14 +23,19 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.score_pretest1);
     
     this.url = this.router.url
     if(localStorage.getItem("pretest_chapter1_score") !== null) {
       this.score_pretest1 = true
     }
+    // else {
+    //   this.score_pretest1 = false
+    // }
+    console.log(this.score_pretest1);
     
     this.checkAswer.pretest_c1.subscribe(result => {
+      console.log(result);
+      
       this.score_pretest1 = result
     })
 

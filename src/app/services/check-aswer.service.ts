@@ -9,7 +9,11 @@ export class CheckAswerComponent {
     
     pretest_c1 = new BehaviorSubject(false);
     
-    constructor(){}
+    constructor(){
+        if(localStorage.getItem("pretest_chapter1_score") !== null){
+            this.pretest_c1.next(true)
+        }
+    }
     
     // chapter 1
     checkAswerPretestChapter1(exam: any) {
