@@ -1,49 +1,68 @@
 <div class="content">
-    <h2>การขยายเทอมผลบวกของผลคูณ (Sum of Products Expressions)</h2>
-    <div>
-        <pre>
+    <div class="paper">
+        <h2 class="box-head-title">การขยายเทอมผลบวกของผลคูณ (Sum of Products Expressions)</h2>
+        <p class="abs">
             จิระพัฒน์ ใจอ่อนน้อม (2541 : 23) ได้กล่าวว่า ในวงจรลอจิกใด ๆ ที่ประกอบด้วยเกต
-        จำนวนมาก ถ้าหากต้องการทราบว่าจะมีจำนวนสถานะของอินพุตที่ไม่ซ้ำกันที่ได้ผลเอาต์พุตเป็นลอจิก
-        “1” ทำได้โดยวิธีการเขียนตารางความจริงดังที่ได้เคยกล่าวมาแล้ว ขณะเดียวกันก็อาจจะใช้วิธีการ
-        ขยายเทอมผลบวกของผลคูณ ได้อีกวิธีหนึ่ง และวิธีนี้ในบางครั้งยังสามารถลดรูปสมการพีชคณิตลอจิก
-        ให้สั้นลงได้ด้วยการขยายเทอมผลบวกของผลคูณซึ่งทำได้ไม่ยุ่งยาก เพียงแต่ใช้กฎ <ng-katex [equation]="'X + \\overline{X} = 1'"></ng-katex> เติม
-        ลงในเทอมของสมการแต่ละเทอมจนกระทั่งไม่สามารถขยายเทอมนั้นอีกต่อไปได้อีกแล้ว ในการเติมตัว
-        แปรแต่ละเทอมจะต้องเป็นตัวแปรที่ยังไม่มีในเทอมของนิพจน์อื่น ๆ และหากขยายแล้วได้เทอมที่
-        เหมือนกันให้นำมาเพียงเทอมเดียวเพราะ X + X = X
+            จำนวนมาก ถ้าหากต้องการทราบว่าจะมีจำนวนสถานะของอินพุตที่ไม่ซ้ำกันที่ได้ผลเอาต์พุตเป็นลอจิก
+            “1” ทำได้โดยวิธีการเขียนตารางความจริงดังที่ได้เคยกล่าวมาแล้ว ขณะเดียวกันก็อาจจะใช้วิธีการ
+            ขยายเทอมผลบวกของผลคูณ ได้อีกวิธีหนึ่ง และวิธีนี้ในบางครั้งยังสามารถลดรูปสมการพีชคณิตลอจิก
+            ให้สั้นลงได้ด้วยการขยายเทอมผลบวกของผลคูณซึ่งทำได้ไม่ยุ่งยาก เพียงแต่ใช้กฎ <ng-katex
+                [equation]="'X + \\overline{X} = 1'"></ng-katex> เติม
+            ลงในเทอมของสมการแต่ละเทอมจนกระทั่งไม่สามารถขยายเทอมนั้นอีกต่อไปได้อีกแล้ว ในการเติมตัว
+            แปรแต่ละเทอมจะต้องเป็นตัวแปรที่ยังไม่มีในเทอมของนิพจน์อื่น ๆ และหากขยายแล้วได้เทอมที่
+            เหมือนกันให้นำมาเพียงเทอมเดียวเพราะ X + X = X
 
-            ตัวอย่าง 4.15 จาก <ng-katex [equation]="'S = \\overline{A}B+(A+\\overline{B})C'"></ng-katex> จงขยายผลบวกของผลคูณหาเทอม
-                        อินพุตที่เอาต์พุตเป็นลอจิก “1” พร้อมทั้งให้หาวงจรที่ประหยัดที่สุด
+            ตัวอย่าง 4.15 จาก <ng-katex [equation]="'S = \\overline{A}B+(A+\\overline{B})C'"></ng-katex>
+            จงขยายผลบวกของผลคูณหาเทอม
+            อินพุตที่เอาต์พุตเป็นลอจิก “1” พร้อมทั้งให้หาวงจรที่ประหยัดที่สุด
 
             วิธีทำ เมื่อเขียนสมการเอาต์พุตได้แล้วก็ขยายเทอมผลบวกของผลคูณหาเทอมอินพุตให้
-        เอาต์พุตเป็นลอจิก “1”
+            เอาต์พุตเป็นลอจิก “1”
 
-                        <ng-katex [equation]="'S = \\overline{A}B+AC+\\overline{B}C'"></ng-katex>
-                             <ng-katex [equation]="'\\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+A\\overline{B}C+\\overline{A}\\overline{B}C'"></ng-katex>
-                        
+            <ng-katex [equation]="'S = \\overline{A}B+AC+\\overline{B}C'"></ng-katex>
+            <ng-katex
+                [equation]="'\\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+A\\overline{B}C+\\overline{A}\\overline{B}C'">
+            </ng-katex>
+
             จากผลของการขยายเทอมผลบวกของผลคูณได้ทั้งหมด 6 เทอมด้วยกัน แต่จะมี 2 เทอมที่ซ้ำ
-        กันคือ <ng-katex [equation]="'A\\overline{B}C'"></ng-katex> ให้เลือกมาเพียงเทอมเดียว ดังนั้นจะมีเพียง 5 เทอมของอินพุตที่ไม่ซ้ำกันคือ
-                                
-                                <ng-katex [equation]="'\\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+\\overline{A}\\overline{B}C'"></ng-katex>
+            กันคือ <ng-katex [equation]="'A\\overline{B}C'"></ng-katex> ให้เลือกมาเพียงเทอมเดียว ดังนั้นจะมีเพียง 5
+            เทอมของอินพุตที่ไม่ซ้ำกันคือ
+
+            <ng-katex
+                [equation]="'\\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+\\overline{A}\\overline{B}C'">
+            </ng-katex>
 
             การลดรูปเพื่อให้เหลือเทอมตัวแปรน้อยที่สุด ทำได้โดยการจับคู่เทอมใหม่ให้เหมาะสม
-        เพื่อที่จะสามารถใช้กฎเดิมคือ <ng-katex [equation]="'x + \\overline{x} = 1'"></ng-katex> ได้ดังนี้
-        
-                        <ng-katex [equation]="'S = \\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+\\overline{A}\\overline{B}C'"></ng-katex>
-                             <ng-katex [equation]="'\\overline{A}C(B+\\overline{B})+AC(B+\\overline{B})+\\overline{A}B\\overline{C}'"></ng-katex>
-                             <ng-katex [equation]="'\\overline{A}C+AC+\\overline{A}B\\overline{C}'"></ng-katex>
-                             <ng-katex [equation]="'C(\\overline{A}+A)+\\overline{A}B\\overline{C}'"></ng-katex>
-                             <ng-katex [equation]="'C+\\overline{A}B\\overline{C}'"></ng-katex>
-                             <ng-katex [equation]="'C+\\overline{A}B'"></ng-katex>
+            เพื่อที่จะสามารถใช้กฎเดิมคือ <ng-katex [equation]="'x + \\overline{x} = 1'"></ng-katex> ได้ดังนี้
+
+            <ng-katex
+                [equation]="'S = \\overline{A}BC+\\overline{A}B\\overline{C}+ABC+A\\overline{B}C+\\overline{A}\\overline{B}C'">
+            </ng-katex>
+            <ng-katex [equation]="'\\overline{A}C(B+\\overline{B})+AC(B+\\overline{B})+\\overline{A}B\\overline{C}'">
+            </ng-katex>
+            <ng-katex [equation]="'\\overline{A}C+AC+\\overline{A}B\\overline{C}'"></ng-katex>
+            <ng-katex [equation]="'C(\\overline{A}+A)+\\overline{A}B\\overline{C}'"></ng-katex>
+            <ng-katex [equation]="'C+\\overline{A}B\\overline{C}'"></ng-katex>
+            <ng-katex [equation]="'C+\\overline{A}B'"></ng-katex>
 
             ทดสอบโดยการเขียนตารางความจริง
-        </pre>
-        <img src="assets/image/c4/t4_15.PNG">
-        <pre>
+        </p>
+        <div class="box-img">
+
+            <img src="assets/image/c4/t4_15.PNG">
+        </div>
+        <p class="abs">
             จากตารางจะเห็นได้ว่ามีเพียง 5 อินพุตที่ไม่ซ้ำกัน ที่ได้เอาต์พุตเป็นลอจิก “1” ซึ่งเหมือนกับ
-        วิธีการขยายผลบวกของผลคูณ ขณะเดียงกันผลของเอาต์พุตที่ทำให้ได้เอาต์พุตเป็นลอจิก “1” ทั้ง
-        ก่อนและหลังการลดรูปได้ผลเหมือนกัน
-        </pre>
-        <img src="assets/image/c4/ex4_16.PNG"><br>
-        <img src="assets/image/c4/ex4_17.PNG">
+            วิธีการขยายผลบวกของผลคูณ ขณะเดียงกันผลของเอาต์พุตที่ทำให้ได้เอาต์พุตเป็นลอจิก “1” ทั้ง
+            ก่อนและหลังการลดรูปได้ผลเหมือนกัน
+        </p>
+        <div class="box-img">
+
+            <img src="assets/image/c4/ex4_16.PNG"><br>
+        </div>
+        <div class="box-img">
+
+            <img src="assets/image/c4/ex4_17.PNG">
+        </div>
     </div>
 </div>
