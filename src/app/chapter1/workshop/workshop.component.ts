@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core'
 })
 export class WorkshopComponent implements OnInit {
 
+    public a = [{},{},{},{},{},]
+
     constructor() {}
 
     ngOnInit(): void {
