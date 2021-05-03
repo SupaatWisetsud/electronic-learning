@@ -54,7 +54,6 @@ export class PosttestComponent implements OnInit {
                 return;
             }
         }
-
         this.checkAswer.checkAswerPosttestChapter1(this.myForm.value);
         this.router.navigateByUrl("/page/learning")
     }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Chapter2Component } from './chapter2.component'
 import { KatexModule } from 'ng-katex';
 
+import { AtftModule } from 'atft';
 import { Chapter2RoutingModule } from './chapter2.routing.module'
 import { PosttestComponent } from './posttest/posttest.component';
 import { PrefaceComponent } from './preface/preface.component';
@@ -48,7 +49,8 @@ import {
     Chapter2RoutingModule,
     KatexModule,
     ReactiveFormsModule, 
-    FormsModule
+    FormsModule,
+    AtftModule
   ]
 })
 export class Chapter2Module { }

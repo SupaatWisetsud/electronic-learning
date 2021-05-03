@@ -20,7 +20,7 @@ export class WorkshopComponent implements OnInit {
   
     public translationY = 0.0;
   
-    public cameraPositionX = 20.0;
+    public cameraPositionX = 30.0;
   
     public mouseEnter() {
       console.log('mouseEnter');

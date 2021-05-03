@@ -484,7 +484,9 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="btn-send-question">
+                <button [disabled]="!myForm.valid" class="btn btn-primary">Send</button>
+            </div>
         </form>
     </div>
 </div>

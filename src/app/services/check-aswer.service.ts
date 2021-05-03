@@ -87,6 +87,8 @@ export class CheckAswerComponent {
         }
         localStorage.setItem("posttest_chapter1_score", score.toString())
         this.posttest_c1.next(true)
+        localStorage.removeItem('pretest_chapter1_score')
+        localStorage.removeItem('posttest_chapter1_score')
         alert("your score is: " + score + "/20");
     }
 
@@ -117,6 +119,8 @@ export class CheckAswerComponent {
         }
         localStorage.setItem("posttest_chapter2_score", score.toString())
         this.posttest_c2.next(true)
+        localStorage.removeItem('pretest_chapter2_score')
+        localStorage.removeItem('posttest_chapter2_score')
         alert("your score is: " + score + "/20");
     }
 
@@ -147,6 +151,8 @@ export class CheckAswerComponent {
         }
         localStorage.setItem("posttest_chapter3_score", score.toString())
         this.posttest_c3.next(true)
+        localStorage.removeItem('pretest_chapter3_score')
+        localStorage.removeItem('posttest_chapter3_score')
         alert("your score is: " + score + "/20");
     }
     
@@ -177,6 +183,8 @@ export class CheckAswerComponent {
         }
         localStorage.setItem("posttest_chapter4_score", score.toString())
         this.posttest_c4.next(true)
+        localStorage.removeItem('pretest_chapter4_score')
+        localStorage.removeItem('posttest_chapter4_score')
         alert("your score is: " + score + "/20");
     }
 

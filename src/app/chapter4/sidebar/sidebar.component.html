@@ -12,10 +12,12 @@
         <ul>
             <li routerLink="/chapter4">คำนำ</li>
             <li routerLink="/chapter4/pretest" >แบบทดสอบก่อนเรียน</li>
-            <!-- <li>บทที่ 1</li> -->
+            <ul *ngIf="score_pretest4" class="lesson-menu disabled-c">
+                <li style=" display: block; cursor: pointer;">แบบทดสอบก่อนเรียน</li>
+            </ul>
             <div class="lesson">
                 <p class="lesson-title">บทที่ 4 พีชคณิตบูลีน</p>
-                <ul class="lesson-menu">
+                <ul class="lesson-menu" *ngIf="score_pretest4">
                     <li routerLink="/chapter4/boolean-algebra-law">กฎของพีชคณิตบูลีน</li>
                     <li routerLink="/chapter4/standard-boolean-forms">การเขียนสมการตรรกะในรูปมาตรฐาน</li>
                     <li routerLink="/chapter4/converting-truth-tables-into-boolean-expressions">การเขียนสมการตรรกะจากตารางความจริง</li>
@@ -24,9 +26,20 @@
                     <li routerLink="/chapter4/sum-of-products-expressions">การขยายเทอมผลบวกของผลคูณ</li>
                     <li routerLink="/chapter4/summary-end-chapter">สรุปท้ายบท</li>
                 </ul>
+                <ul *ngIf="!score_pretest4" class="lesson-menu disabled-c">
+                    <li >กฎของพีชคณิตบูลีน</li>
+                    <li >การเขียนสมการตรรกะในรูปมาตรฐาน</li>
+                    <li >การเขียนสมการตรรกะจากตารางความจริง</li>
+                    <li >การลดรูปสมการพีชคณิตบูลีน</li>
+                    <li >ทฤษฎีของ ดี มอร์แกน</li>
+                    <li >การขยายเทอมผลบวกของผลคูณ</li>
+                    <li >สรุปท้ายบท</li>
+                </ul>
             </div>
-            <li routerLink="/chapter3/posttest">แบบทดสอบหลังเรียน</li>
-            <li routerLink="/chapter3/workshop">ปฎิบัติการ</li>
+            <li *ngIf="!score_pretest4"   class="disable-li">แบบทดสอบหลังเรียน</li>
+            <li *ngIf="!score_pretest4"  class="disable-li">ปฎิบัติการ</li>
+            <li *ngIf="score_pretest4" routerLink="/chapter4/posttest">แบบทดสอบหลังเรียน</li>
+            <li  routerLink="/chapter4/workshop">ปฎิบัติการ</li>
         </ul>
     </div>
 </div>

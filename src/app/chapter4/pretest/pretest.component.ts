@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms'
+import { Router } from '@angular/router'
+import { CheckAswerComponent } from '../../services/check-aswer.service'
 
 @Component({
   selector: 'app-pretest',
@@ -12,7 +14,9 @@ export class PretestComponent implements OnInit {
   public myForm: FormGroup;
 
   constructor(
-      private fb: FormBuilder
+      private fb: FormBuilder,
+        private checkAswer: CheckAswerComponent,
+        private router: Router
   ) {
       this.myForm = this.fb.group({
           c4_q1: '',
@@ -40,6 +44,17 @@ export class PretestComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
+  }sendQuestion() {
+
+        for (const [_, value] of Object.entries(this.myForm.value)) {
+            if (value === null) {
+                alert("กรุณาตอบคำถามให้ครบ!")
+                return;
+            }
+        }
+
+        this.checkAswer.checkAswerPretestChapter4(this.myForm.value);
+        this.router.navigateByUrl("/chapter1/analog-and-digital")
+    }
 
 }

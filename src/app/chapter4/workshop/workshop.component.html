@@ -1,1 +1,41 @@
-<p>workshop works!</p>
+<div class="content">
+    <div class="paper">
+        <div class="container-item">
+            <div class="item" style="flex: 2;">
+                <atft-orbit-controls [rotateSpeed]=1 [zoomSpeed]=1.2>
+                    <atft-renderer-canvas>
+
+                        <atft-perspective-camera [fov]=10 [near]=1 [far]=100 [positionX]=cameraPositionX positionY=30
+                        positionZ=25 atft-raycaster-camera atft-raycaster-enable>
+                    </atft-perspective-camera>
+
+                    <atft-scene>
+                        <!-- <atft-axes-helper size=200></atft-axes-helper>
+                        <atft-grid-helper size=100 divisions=10></atft-grid-helper> -->
+
+                        <atft-point-light color="0xffffff" intensity="0.9" distance="1000" translateX=50
+                            translateY=50 translateZ=50></atft-point-light>
+                        <atft-point-light color="0xffffff" intensity="0.1" distance="1000" translateX=-50
+                            translateY=50 translateZ=20></atft-point-light>
+
+                            <atft-obj-loader model="assets/model/three/LAB4.obj" material="assets/model/three/LAB4.mtl"
+                                texturePath="assets/model/three/" rotateX={{-0|deg2rad}} translateX=-3 translateY=-10>
+                            </atft-obj-loader>
+                        </atft-scene>
+                    </atft-renderer-canvas>
+                </atft-orbit-controls>
+            </div>
+            <div class="item">
+                <div *ngFor="let a of a" class="item" style="flex: 1;">
+                    <div class="container-item">
+                        <div class="item" style="flex: 1;">
+                        </div>
+                        <div class="item" style="flex: 2;">
+                            <p>6666666</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

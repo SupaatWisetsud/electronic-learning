@@ -11,11 +11,13 @@
     <div class="menu">
         <ul>
             <li routerLink="/chapter2">คำนำ</li>
-            <li routerLink="/chapter2/pretest" >แบบทดสอบก่อนเรียน</li>
-            <!-- <li>บทที่ 1</li> -->
+            <li *ngIf="!score_pretest2" routerLink="/chapter2/pretest" >แบบทดสอบก่อนเรียน</li>
+            <ul *ngIf="score_pretest2" class="lesson-menu disabled-c">
+                <li style=" display: block; cursor: pointer;">แบบทดสอบก่อนเรียน</li>
+            </ul>
             <div class="lesson">
                 <p class="lesson-title">บทที่ 2 เลขฐานและการดำเนินการทางคณิตศาสตร์กับเลขฐาน</p>
-                <ul class="lesson-menu">
+                <ul class="lesson-menu" *ngIf="score_pretest2">
                     <li routerLink="/chapter2/number-system">ระบบตัวเลข</li>
                     <li routerLink="/chapter2/relation-of-numbers">ความสัมพันธ์ระหว่างเลขฐานสอง ฐานแปด และฐานสิบหก</li>
                     <li routerLink="/chapter2/number-system-conversion">การแปลงเลขฐานสองเป็นฐานแปด และฐานสิบหก</li>
@@ -27,9 +29,23 @@
                     <li routerLink="/chapter2/binary-division">การหารเลขฐานสอง</li>
                     <li routerLink="/chapter2/summary-end-chapter">สรุปท้ายบท</li>
                 </ul>
+                <ul *ngIf="!score_pretest2" class="lesson-menu disabled-c">
+                    <li >ระบบตัวเลข</li>
+                    <li >ความสัมพันธ์ระหว่างเลขฐานสอง ฐานแปด และฐานสิบหก</li>
+                    <li >การแปลงเลขฐานสองเป็นฐานแปด และฐานสิบหก</li>
+                    <li >การแปลงเลขฐานแปดเป็นฐานสิบหก</li>
+                    <li >คอมพลีเมนต์ของเลขฐาน</li>
+                    <li >การบวกเลขฐานสอง</li>
+                    <li >การลบเลขฐานสอง</li>
+                    <li >การคูณเลขฐานสอง</li>
+                    <li >การหารเลขฐานสอง</li>
+                    <li >สรุปท้ายบท</li>
+                </ul>
             </div>
-            <li routerLink="/chapter2/posttest">แบบทดสอบหลังเรียน</li>
+            <li *ngIf="score_pretest2" routerLink="/chapter2/posttest">แบบทดสอบหลังเรียน</li>
             <li routerLink="/chapter2/workshop">ปฎิบัติการ</li>
+            <li *ngIf="!score_pretest2" class="disable-li" >แบบทดสอบหลังเรียน</li>
+            <li *ngIf="!score_pretest2" class="disable-li">ปฎิบัติการ</li>
         </ul>
     </div>
 </div>

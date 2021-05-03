@@ -11,11 +11,13 @@
     <div class="menu">
         <ul>
             <li routerLink="/chapter3">คำนำ</li>
-            <li routerLink="/chapter3/pretest" >แบบทดสอบก่อนเรียน</li>
-            <!-- <li>บทที่ 1</li> -->
+            <li *ngIf="!score_pretest3" routerLink="/chapter2/pretest" >แบบทดสอบก่อนเรียน</li>
+            <ul *ngIf="score_pretest3" class="lesson-menu disabled-c">
+                <li style=" display: block; cursor: pointer;">แบบทดสอบก่อนเรียน</li>
+            </ul>
             <div class="lesson">
                 <p class="lesson-title">บทที่ 3 ลอจิกเกต</p>
-                <ul class="lesson-menu">
+                <ul class="lesson-menu" *ngIf="score_pretest3">
                     <li routerLink="/chapter3/the-inverter-gate-and-buffer">อินเวอร์เตอร์เกตและบัฟเฟอร์</li>
                     <li routerLink="/chapter3/the-and-gate">แอนด์เกต</li>
                     <li routerLink="/chapter3/the-nand-gate">แนนด์เกต</li>
@@ -27,9 +29,23 @@
                     <li routerLink="/chapter3/logic-integrated-circuits">วงจรรวมลอจิกเกต</li>
                     <li routerLink="/chapter3/summary-end-chapter">สรุปท้ายบท</li>
                 </ul>
+                <ul *ngIf="!score_pretest3" class="lesson-menu disabled-c">
+                    <li >อินเวอร์เตอร์เกตและบัฟเฟอร์</li>
+                    <li >แอนด์เกต</li>
+                    <li >แนนด์เกต</li>
+                    <li >ออร์เกต</li>
+                    <li >นอร์เกต</li>
+                    <li >เอกซ์คลูซีฟออร์เกต</li>
+                    <li >เอกซ์คลูซีฟนอร์เกต</li>
+                    <li >เกตที่มีมากกว่าสองอินพุต</li>
+                    <li >วงจรรวมลอจิกเกต</li>
+                    <li >สรุปท้ายบท</li>
+                </ul>
             </div>
-            <li routerLink="/chapter3/posttest">แบบทดสอบหลังเรียน</li>
+            <li *ngIf="score_pretest3" routerLink="/chapter3/posttest">แบบทดสอบหลังเรียน</li>
             <li routerLink="/chapter3/workshop">ปฎิบัติการ</li>
+            <li *ngIf="!score_pretest3" class="disable-li">แบบทดสอบหลังเรียน</li>
+            <li *ngIf="!score_pretest3" class="disable-li">ปฎิบัติการ</li>
         </ul>
     </div>
 </div>
