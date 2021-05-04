@@ -26,16 +26,29 @@
                 </atft-orbit-controls>
             </div>
             <div class="item">
-                <div *ngFor="let a of a" class="item" style="flex: 1;">
-                    <div class="container-item">
-                        <div class="item" style="flex: 1;">
-                        </div>
-                        <div class="item" style="flex: 2;">
-                            <p>6666666</p>
-                        </div>
-                    </div>
-                </div>
+                <ngb-accordion [closeOthers]="true" activeIds="static-1" *ngFor="let a of a">
+                    <ngb-panel id="static-{{a.id}}">
+                        <ng-template ngbPanelTitle>
+                            <span>{{a.title}}</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <div class="tooltip">Hover over me
+                                <img class="tooltiptext"
+                                    src="https://secure.gravatar.com/avatar/655f4cf189cbb2349e5bad3314c4f3bc?s=114&d=mm&r=g"
+                                    alt="" />
+                                <span>Tooltip text</span>
+                            </div>
+                            <!-- <div *ngFor="let b of a.children">
+                                <p>{{b.id+'. '+b.childrentitle}}</p>
+                                <hr>
+                            </div> -->
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
             </div>
+        </div>
+        <div>
+
         </div>
     </div>
 </div>

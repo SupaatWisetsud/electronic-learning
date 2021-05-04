@@ -11,6 +11,7 @@ import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {     
   BinaryAdditionComponent,
   BinaryDivisionComponent,
@@ -45,6 +46,7 @@ import {
     OctalToHexadecimalConversionComponent
   ],
   imports: [
+    NgbModule,
     CommonModule,
     Chapter2RoutingModule,
     KatexModule,

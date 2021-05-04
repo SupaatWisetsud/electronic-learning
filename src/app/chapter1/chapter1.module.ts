@@ -10,6 +10,7 @@ import { PosttestComponent } from './posttest/posttest.component'
 import { WorkshopComponent } from './workshop/workshop.component'
 import {MatCardModule} from '@angular/material/card';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
     AnalogAndDigitalComponent,
     DigitalApplicationComponent,
@@ -38,6 +39,7 @@ import {
         TheProcessOfConvertingAnalogDataToDigitalComponent
     ],
     imports: [
+        NgbModule,
         CommonModule,
         Chapter1RoutingModule,
         ReactiveFormsModule,

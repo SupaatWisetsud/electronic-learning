@@ -11,6 +11,7 @@ import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {     
   GateWithMoreThanInputsComponent,
   LogicIntegratedCircuitsComponent,
@@ -44,6 +45,7 @@ import {
     SidebarComponent, 
     WorkshopComponent],
   imports: [
+    NgbModule,
     CommonModule,
     Chapter3RoutingModule,
     KatexModule,

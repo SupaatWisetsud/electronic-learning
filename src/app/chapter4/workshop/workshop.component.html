@@ -26,15 +26,18 @@
                 </atft-orbit-controls>
             </div>
             <div class="item">
-                <div *ngFor="let a of a" class="item" style="flex: 1;">
-                    <div class="container-item">
-                        <div class="item" style="flex: 1;">
-                        </div>
-                        <div class="item" style="flex: 2;">
-                            <p>6666666</p>
-                        </div>
-                    </div>
-                </div>
+                <ngb-accordion  [closeOthers]="true" activeIds="static-1" *ngFor="let a of a">
+                    <ngb-panel  id="static-{{a.id}}">
+                        <ng-template ngbPanelTitle>
+                            <span>{{a.title}}</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent >
+                            <div *ngFor="let b of a.children">
+                                <p>{{b.id+'. '+b.childrentitle}}</p><hr><br>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
             </div>
         </div>
     </div>

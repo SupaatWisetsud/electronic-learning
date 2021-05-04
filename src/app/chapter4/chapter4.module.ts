@@ -11,7 +11,7 @@ import { PretestComponent } from './pretest/pretest.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   BooleanAlgebraLawComponent,
   ConvertingTruthTablesIntoBooleanExpressionsComponent,
@@ -40,6 +40,7 @@ import {
     SidebarComponent, 
     WorkshopComponent],
   imports: [
+    NgbModule,
     CommonModule,
     Chapter4RoutingModule,
     KatexModule,
